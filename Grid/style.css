@@ -1,0 +1,205 @@
+/* TODO grid-template-columns/rows */
+
+.grid-container1 {
+    width: 400px;
+    height: 400px;
+    border: 1px solid #242526;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.grid-item1 {
+    background-color: #efefef;
+    border: 1px solid red;
+}
+
+/* TODO grid-template-areas */
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 50px);
+    grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
+}
+
+.grid-item2a {
+    grid-area: header;
+    background-color: darkolivegreen;
+}
+
+.grid-item2b {
+    grid-area: main;
+    background-color: crimson;
+}
+
+.grid-item2c {
+    grid-area: sidebar;
+    background-color: darkgoldenrod;
+}
+
+.grid-item2d {
+    grid-area: footer;
+    background-color: fuchsia;
+}
+
+/* TODO gap / column-gap / row-gap */
+
+.grid-container3 {
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 200px);
+    border: 2px solid #242526;
+    gap: 3px;
+   /*  column-gap: 3px;
+    row-gap: 10px; */
+}
+
+.grid-item3 {
+    background-color: crimson;
+}
+
+/* TODO justify-items: start | center | end | stretch */
+
+.grid-container4 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+    /* justify-items: start; */
+    /* justify-items: end; */
+    justify-items: center;
+    gap: 4px;
+}
+
+.grid-item4 {
+    color: #efefef;
+    background-color: #242526;
+}
+
+/* TODO align-items: start | center | end | stretch */
+
+.grid-container5 {
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 3px;
+    /* align-items: start; */
+    /* align-items: center; */
+    /* align-items: end; */
+}
+
+.grid-item5 {
+    background-color: darkred;
+}
+
+/* TODO place-items: start | center | end | stretch */
+
+.grid-container6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    /* place-items: start; */
+    /* place-items: center; */
+    /* place-items: end; */
+    place-items: stretch;
+}
+
+.grid-item6 {
+    height: 100px;
+    background-color: lightblue;
+}
+
+/* TODO justify-content: start | center | end | stretch | space-around | space-between | space-evenly */
+/* Aseaza itemele de la stanga la dreapta */
+
+.grid-container7 {
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 250px);
+    gap: 3px;
+    /* justify-content: start; */
+    /* justify-content: center; */
+    /* justify-content: end; */
+    /* justify-content: stretch; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    justify-content: space-evenly;
+}
+
+.grid-item7 {
+    background-color: darkorange;
+}
+
+/* TODO align-content: start | center | end | stretch | space-around | space-between | space-evenly */
+/* Aseaza itemele de sus in jos */
+
+.grid-container8 {
+    height: 800px;
+    border: 1px solid #242526;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 3px;
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: end; */
+    /* align-content: stretch; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    align-content: space-evenly;
+}
+
+.grid-item8 {
+    background-color: lightpink;
+}
+
+/* TODO place-content: start | center | end | stretch | space-around | space-between | space-evenly */
+/* IMPORTANT Plaseaza tot continutul */
+
+.grid-container9 {
+    height: 800px;
+    border: 1px solid #242526;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 220px);
+    gap: 3px;
+    /* place-content: start; */
+    /* place-content: center; */
+    /* place-content: end; */
+    /* place-content: stretch; */
+    /* place-content: space-around; */
+    /* place-content: space-between; */
+    place-content: space-evenly;
+}
+
+.grid-item9 {
+    background-color:indigo;
+}
+
+/* TODO align-slef / justify-self: start | center | end | stretch | space-around | space-between | space-evenly */
+
+.grid-container10 {
+    height: 800px;
+    border: 1px solid #242526;
+    display: grid;
+    grid-template-columns: repeat(3, 300px);
+    grid-template-rows: repeat(3, 220px);
+    gap: 3px;
+}
+
+.grid-item10 {
+    background-color:indigo;
+}
+
+.align-top {
+    align-self: start;
+}
+
+.justify-left {
+    justify-self: start;
+}

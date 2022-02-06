@@ -6,7 +6,7 @@
     background-color: #F0E7DB;
     display: flex;
     /* width: 1200px; */
-    height: 500px;
+    height: 900px;
     margin: auto;
     padding: 20px;
     /* justify-content: flex-start; */
@@ -16,10 +16,20 @@
     /* justify-content: space-around; */
     justify-content: space-evenly;
     flex-wrap: wrap;
-    /* align-items: flex-start; */
+    align-items: flex-start;
     /* align-items: flex-end; */
-    align-items: center;
+    /* align-items: center; */
+    align-content: flex-start;
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-between; */
+    /* align-content: space-around; */
+    align-content: space-evenly;
     
+}
+
+.special {
+    align-self: flex-end;
 }
 
 .card {
@@ -61,4 +71,8 @@
 
 .card button:active {
     transform: translateY(2px)
+}
+
+.special {
+    align-self: flex-start;
 }
